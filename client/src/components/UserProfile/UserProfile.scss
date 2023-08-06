@@ -1,0 +1,132 @@
+// UserWidget.scss
+
+// Define SCSS variables for colors
+$dark: #333;
+$medium: #666;
+$main: #999;
+$primaryLight: #0077ff;
+
+// Styling for UserWidget
+.UserWidget {
+  // FIRST ROW
+  .user-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-bottom: 1.1rem;
+    cursor: pointer;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .user-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        // Add styles for the user image
+      }
+
+      .user-details {
+        .user-name {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: $dark;
+          &:hover {
+            color: $primaryLight;
+          }
+        }
+
+        .user-friends {
+          color: $medium;
+        }
+      }
+    }
+
+    .manage-icon {
+      // Add styles for the ManageAccountsOutlined icon
+    }
+  }
+
+  .divider {
+    // Add styles for the Divider
+  }
+
+  // SECOND ROW
+  .location-row,
+  .occupation-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+
+    .location-icon,
+    .occupation-icon {
+      font-size: 24px;
+      color: $main;
+    }
+
+    .location-text,
+    .occupation-text {
+      color: $medium;
+    }
+  }
+
+  // THIRD ROW
+  .views-row,
+  .impressions-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .views-label,
+    .impressions-label {
+      color: $medium;
+    }
+
+    .views-count,
+    .impressions-count {
+      font-weight: 500;
+      color: $main;
+    }
+  }
+
+  // FOURTH ROW
+  .social-profiles {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $main;
+    margin-bottom: 1rem;
+  }
+
+  .social-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+
+    .social-image {
+      width: 24px;
+      height: 24px;
+      // Add styles for the social image
+    }
+
+    .social-details {
+      .social-title {
+        font-weight: 500;
+        color: $main;
+      }
+
+      .social-description {
+        color: $medium;
+      }
+    }
+
+    .edit-icon {
+      color: $main;
+    }
+  }
+}

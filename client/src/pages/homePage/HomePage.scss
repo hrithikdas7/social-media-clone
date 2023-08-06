@@ -1,0 +1,24 @@
+.main-div{
+    display: flex;
+    justify-content: space-between;
+
+
+    .profile-message{
+       display: flex;
+       flex-direction: column;
+       width: 30%;
+       height: auto;
+    }
+    .addpost-feed{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: auto;
+    }
+    .friend-list{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+    }
+}

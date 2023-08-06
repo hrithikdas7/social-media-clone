@@ -1,0 +1,115 @@
+// LoginForm.scss
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Overpass+Mono");
+
+// Colors
+$primaryColor: #007bff;
+$secondaryColor: #f0f0f0;
+$errorColor: #dc3545;
+
+// Fonts
+$formFont: "Overpass Mono", monospace;
+$headerFont: "Indie Flower", cursive;
+
+// Main wrapper
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the form vertically */
+  min-height: 100vh; /* Set a minimum height to occupy the whole viewport */
+  font-family: $formFont;
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+      font-family: $headerFont;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .l-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      form{
+        
+        text-align: center;
+        .email{
+            justify-content: space-between;
+            display: flex;
+           }
+           .password{
+            justify-content: space-between;
+            margin-top: 5px;
+            display: flex;
+           }
+      }
+
+   
+
+      .input-1,
+      .input-2 {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: $formFont;
+        
+
+        &:focus {
+          outline: none;
+          border-color: $primaryColor;
+          box-shadow: 0 0 5px rgba($primaryColor, 0.5);
+        }
+      }
+
+      .input-2 {
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        margin-top: 5px;
+        background-color: $primaryColor;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+        font-family: $formFont;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+          background-color: darken($primaryColor, 10%);
+        }
+      }
+    }
+  }
+
+  .sub-content {
+    margin-top: 20px;
+    font-family: $formFont;
+    .s-part {
+      font-size: 14px;
+      a {
+        color: $primaryColor;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .errorMessage {
+    color: $errorColor;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
